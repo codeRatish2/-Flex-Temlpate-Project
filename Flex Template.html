@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FLEX Template</title>
+	<style>
+        *{
+	       margin: 0;
+	       padding: 0;
+	       box-sizing: border-box;
+        }
+        .hero{
+        	position: relative;
+        	justify-content: center;
+            min-height:100vh;
+            color: #fff;
+            text-align: center;
+        }
+
+		.hero .background-image{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+			background-color:#2196F3;
+			z-index: -1;
+		}
+		.hero .background-image:after{
+	        content: '';
+	        position: absolute;
+	        top: 0;
+	        left: 0;
+	        width: 100%;
+	        height: 100%;
+	        background-color: #414a4f;
+         	opacity: 0.75;
+        } 
+        header{
+	        position: absolute;
+	        top: 0;
+	        left: 0;
+        	z-index: 10;
+	        width: 100%;
+        	display: flex;
+	        justify-content: space-between;
+	        align-items: center;
+	        color: #fff;
+	        padding: 35px 100px 0;
+	    }  	
+		header nav{
+			list-style: none;
+	        display: flex;
+        }
+        header nav li{
+	       margin: 0 15px;
+	      
+	    }
+	    header nav li:first-child{
+	        margin-left: 0;
+	    }
+	    header nav li:last-child{
+	        margin-right: 0;
+	    }    	
+	    section{
+	        display: flex;
+	        flex-direction: column;
+	        align-items: center;
+            padding: 125px 100px;
+        }
+        .hero a.btn{
+	        padding: 20px 46px;
+        }
+        a.btn{
+	       color: #fff;
+	       border-radius: 4px;
+           text-transform: uppercase;
+	       background-color: #2196F3;
+           font-weight: 800;
+	       text-align: center;
+        }
+        .work {
+        	background-color: #fff;
+        }
+        	  
+
+
+	</style>
+</head>
+<body>
+    <Header>
+	    <nav>
+		<ul>
+			<li>Home</li>
+			<li>Products</li>
+			<li>About</li>
+			<li>Contact</li>
+	    </ul>
+	    </nav>
+    </Header>
+    <section class="hero">
+    	<div class="background-image" style="background-image: url(hero.jpg);"></div>
+    	<h1> Responsive Flex Template</h1>
+    	<h3> A freebie by Tutorlize</h3>
+    	<a href="<a href="http://tutorialzine.com/2016/06/freebie-landing-page-template-with-flexbox/" class="btn">Download it Here</a>">
+    </section>	    
+    <section class="work">
+    	<h2> Some Of Your Work</h2>
+    	<p>lorem ipsum dolor sit amet, consector adipising elit, nullum id fellis et ipsum billedum witness morbi.<br>vitae pulvir velit sed abquam spon id sunsittai augve male suada etc</p>
+    	<ul class="grid">
+    		<li class="small" style="background-image">
+    </section>
+
+</body>
+</html>
